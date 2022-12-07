@@ -1,0 +1,3 @@
+# vue-2
+A simple form page created using VueJS-2 CDN.
+A form that contains 4 inputs ( first name, last name, email and phone number) with a paragraph to show the output of what the user types - each input has validation - inputs has an onSubmit function -form also prevents default when a user clicks on “submit”-when form is submitted, the user is alerted that the form has been submitted....
