@@ -10,14 +10,14 @@
 <body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script> 
     <div id="app">
-      <div class="page_heading">
-        {{registration}}
+      <div class="page_heading_sect">
+        <h1 id="page_heading">{{registration}}</h1>
       </div>
       <form class="input_area">
-        <input v-on:input="displayFirstName" id="fName" class="input_box" type="text" value="First Name" required />
-        <input id="lName" class="input_box" type="text" value="Last Name" required>
-        <input id="email" class="input_box" type="email" value="Email" required>
-        <input id="phone" class="input_box" type="tel" value="Tel" required>
+        <input v-on:input="displayFirstName" id="fName" class="input_box" type="text" placeholder="First Name" required />
+        <input id="lName" class="input_box" type="text" placeholder="Last Name" required>
+        <input id="email" class="input_box" type="email" placeholder="Email" required>
+        <input id="phone" class="input_box" type="tel" placeholder="Tel" required>
         <input type="submit" value="Submit" required>
       </form>  
 
