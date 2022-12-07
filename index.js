@@ -5,7 +5,8 @@ new Vue({
         firstName: '',
         secondName: 'your firstName',
         email : 'yourmail',
-        phone : 'your phone number'
+        phone : 'your phone number',
+        registration : 'Registration Form'
     },
 
     methods: {
