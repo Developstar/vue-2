@@ -50,5 +50,9 @@ body{
 
 .para{
     /* display: none; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem auto;
 }
 
