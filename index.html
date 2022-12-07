@@ -15,18 +15,23 @@
       </div>
       <form class="input_area">
         <input v-on:input="displayFirstName" id="fName" class="input_box" type="text" placeholder="First Name" required />
-        <input id="lName" class="input_box" type="text" placeholder="Last Name" required>
-        <input id="email" class="input_box" type="email" placeholder="Email" required>
-        <input id="phone" class="input_box" type="tel" placeholder="Tel" required>
-        <input type="submit" value="Submit" required>
+        <input v-on:input="displaySecondName" id="lName" class="input_box" type="text" placeholder="Last Name" required>
+        <input v-on:input="displayEmail" id="email" class="input_box" type="email" placeholder="Email" required>
+        <input v-on:input="displayPhone" id="phone" class="input_box" type="tel" placeholder="Tel" required>
+        <input  type="submit" value="Submit" required>
       </form>  
 
       <div class="para">
-        <!-- {{greetings}}  -->
+        <p>
+          {{greetings}} 
         {{firstName}}
-        <!-- {{secondName}} -->
-        <!-- {{email}} -->
-        <!-- {{Phone}} -->
+        {{secondName}}
+        {{gmailIntro}}
+        {{email}}
+        {{comma}}
+        {{phone}}
+        </p>
+        
 
       </div>
     </div>
