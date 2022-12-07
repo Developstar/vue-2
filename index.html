@@ -18,7 +18,7 @@
         <input v-on:input="displaySecondName" id="lName" class="input_box" type="text" placeholder="Last Name" required>
         <input v-on:input="displayEmail" id="email" class="input_box" type="email" placeholder="Email" required>
         <input v-on:input="displayPhone" id="phone" class="input_box" type="tel" placeholder="Tel" required>
-        <input  type="submit" value="Submit" required>
+        <input v-on:click="prevDefault"  id="formSubmit" type="submit" value="Submit" required>
       </form>  
 
       <div class="para">
