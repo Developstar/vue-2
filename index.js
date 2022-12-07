@@ -26,7 +26,16 @@ new Vue({
         
         displayPhone : function(e){
             this.phone = e.target.value;
-        }
+        },
+
+        prevDefault : function(e) {
+            let firstName = this.firstName;
+            e.preventDefault();
+            alert(`${firstName} Form is Submitted`);
+        },
+        
+
+      
         
 
         
