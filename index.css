@@ -1,3 +1,13 @@
+#app{
+    width: 70%;
+    margin: 0 auto;
+    background: whitesmoke;
+}
+
+.page_heading{
+    background-color: aqua;
+}
+
 .input_area{
     display: flex;
     flex-direction: column;
@@ -7,6 +17,12 @@
     
 }
 
+.input_box{
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 1rem;
+}
 
 .para{
     /* display: none; */
