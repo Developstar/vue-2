@@ -14,10 +14,10 @@
         <h1 id="page_heading">{{registration}}</h1>
       </div>
       <form class="input_area">
-        <input v-on:input="displayFirstName" id="fName" class="input_box" type="text" placeholder="First Name" required />
-        <input v-on:input="displaySecondName" id="lName" class="input_box" type="text" placeholder="Last Name" required>
-        <input v-on:input="displayEmail" id="email" class="input_box" type="email" placeholder="Email" required>
-        <input v-on:input="displayPhone" id="phone" class="input_box" type="tel" placeholder="Tel" required>
+        <input v-on:input="displayFirstName" id="fName" class="input_box" type="text" placeholder="First Name" ref="name1" required />
+        <input v-on:input="displaySecondName" id="lName" class="input_box" type="text" placeholder="Last Name" ref="name2" required>
+        <input v-on:input="displayEmail" id="email" class="input_box" type="email" placeholder="Email" ref="mail" required>
+        <input v-on:input="displayPhone" id="phone" class="input_box" type="tel" placeholder="Tel" ref="num" required>
         <input v-on:click="prevDefault"  id="formSubmit" type="submit" value="Submit" required>
       </form>  
 
