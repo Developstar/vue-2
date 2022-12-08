@@ -33,10 +33,14 @@ new Vue({
       let firstName = this.firstName;
       e.preventDefault();
       alert(`${firstName} Form is Submitted`);
+
+      //cleared the paragraph section
       this.firstName = e.target.emptySting;
       this.secondName = e.target.emptySting;
       this.email = e.target.emptySting;
       this.phone = e.target.emptySting;
+
+      //cleared input section
       this.$refs["num"].value = "";
       this.$refs["name1"].value = "";
       this.$refs["name2"].value = "";
