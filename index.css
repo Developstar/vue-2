@@ -4,17 +4,18 @@
 }
 
 body{
-    background: blueviolet;
+    background: black;
 }
 #app{
-    width: 50%;
+    width: 30%;
     
     background: whitesmoke;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    height: 80vh;
+    height: 90vh;
     border-radius: 1rem;
+    
     
 }
 
@@ -33,7 +34,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 80%;
+    height: 100%;
     margin: 0 auto;
     
     
@@ -67,8 +68,27 @@ input:focus{
 .para{
     /* display: none; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 80%;
     margin: 1rem auto;
 }
 
+p{
+    font-size: 0.9rem;
+}
+
+
+
+
+/* For mobile phones */
+@media (min-width:320px) and (max-width:480px){
+    #app{
+        width: 80%;
+        border-radius: 1.5rem; 
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+}
