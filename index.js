@@ -8,7 +8,8 @@ new Vue({
         email : '...',
         comma : ',',
         phone : '...',
-        registration : 'Registration Form'
+        registration : 'Registration Form',
+        emptySting : ''
     },
 
     methods: {
@@ -30,9 +31,20 @@ new Vue({
 
         prevDefault : function(e) {
             let firstName = this.firstName;
+            // let emptyString = this.emptySting;
             e.preventDefault();
             alert(`${firstName} Form is Submitted`);
-        },
+            this.firstName = e.target.emptySting;
+            this.secondName = e.target.emptySting;
+            this.email = e.target.emptySting;
+            this.phone = e.target.emptySting;
+            this.$refs["num"].value = '';
+            this.$refs["name1"].value = '';
+            this.$refs["name2"].value = '';
+            this.$refs["mail"].value = '';
+        }
+
+
         
 
       
