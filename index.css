@@ -22,7 +22,8 @@ body{
 
 #page_heading{
     color:#3c86e7;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin:1rem auto;
     
 }
 
@@ -46,6 +47,21 @@ body{
     margin-bottom: 1rem;
     width: 100%;
     height: 80%;
+    background: whitesmoke;
+}
+
+
+
+input:focus{
+    outline: none;
+}
+
+#formSubmit{
+    width: 100%;
+    height: 7rem;
+    color: white;
+    background: #3c86e7;
+    border-radius: 1rem;
 }
 
 .para{
